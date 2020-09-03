@@ -13,6 +13,14 @@ function frameIt() {
     $('img').addClass('tasty');
   });
 }
+//
+function pressIt() {
+  $('#typing').on('keydown', function(keys) {
+    if (keys.key === 'g') {
+      alert('you just pressed g!');
+    }
+  });
+}
 $(document).ready(function(){
 
 // call functions here
