@@ -7,9 +7,10 @@ function getIt() {
 }
 //
 function frameIt() {
-  $('img').on('load', function() {
-    var imaged = $('img');
-    imaged.addClass('tasty');
+  // gets the images (there is 1) and adds event handler waiting for load
+  $('img[src]').on('load', function() {
+    // once img is loaded, add class 'tasty' for a boarder
+    $('img').addClass('tasty');
   });
 }
 $(document).ready(function(){
