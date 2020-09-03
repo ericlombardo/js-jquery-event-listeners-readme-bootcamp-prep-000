@@ -13,14 +13,19 @@ function frameIt() {
     $('img').addClass('tasty');
   });
 }
-//
+// alerts user when they press g
 function pressIt() {
+  // adds event handler on element with id of typing and accepts the keys
   $('#typing').on('keydown', function(keys) {
+    // test if the letter that they enter is 'g' or not
     if (keys.key === 'g') {
+      // if it is user gets an alert
       alert('you just pressed g!');
     }
   });
 }
+//
+function 
 $(document).ready(function(){
 
 // call functions here
