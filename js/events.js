@@ -8,7 +8,7 @@ function getIt() {
 //
 function frameIt() {
   // gets the images (there is 1) and adds event handler waiting for load
-  $('img[src]').on('load', function() {
+  $('img').on('load', function() {
     // once img is loaded, add class 'tasty' for a boarder
     $('img').addClass('tasty');
   });
