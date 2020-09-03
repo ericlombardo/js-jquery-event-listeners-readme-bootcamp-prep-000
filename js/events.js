@@ -8,7 +8,8 @@ function getIt() {
 //
 function frameIt() {
   $('img').on('load', function() {
-    $('img').addClassName('tasty');
+    var imaged = $('img');
+    imaged.addClass('tasty');
   });
 }
 $(document).ready(function(){
